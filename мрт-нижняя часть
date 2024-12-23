@@ -1,0 +1,24 @@
+
+<div class="container">
+<div class="row">
+<div class="col-md-4 image-container"><img src="https://clinic-tesla.ru/wp-content/uploads/2024/12/Клиника-КТ-01.jpg" alt="Изображение 1" /></div>
+<div class="col-md-4 image-container"><img src="https://clinic-tesla.ru/wp-content/uploads/2024/12/Клиника-КТ-02.jpg" alt="Изображение 2" /></div>
+<div class="col-md-4 image-container"><img src="https://clinic-tesla.ru/wp-content/uploads/2024/12/Клиника-КТ-03.jpg" alt="Изображение 3" /></div>
+</div>
+<div class="row">
+<div class="col-md-4 image-container"><img src="https://clinic-tesla.ru/wp-content/uploads/2024/12/Клиника-КТ-04.jpg" alt="Изображение 4" /></div>
+<div class="col-md-4 image-container"><img src="https://clinic-tesla.ru/wp-content/uploads/2024/12/Клиника-КТ-05.jpg" alt="Изображение 5" /></div>
+<div class="col-md-4 image-container"><img src="https://clinic-tesla.ru/wp-content/uploads/2024/12/Клиника-КТ-06-e1734706706456.jpg" alt="Изображение 6" /></div>
+</div>
+</div>
+
+
+<div class="wrapper">
+<div class="feedback">
+<h3 class="page_sub_header lined_header">Обратная связь</h3>
+<p>[contact-form-7 id="214" title="Форма обратной связи"]</p>
+</div>
+</div>
+
+
+<? if($pageData['after_tabs']) { ?><div class="after_tabs"><?= $pageData['after_tabs']; ?></div><? } ?>
