@@ -1,0 +1,34 @@
+<div class="form_block">
+        <div class="shadow_back block_shadow_back" id="review_shadow_back"><div class="ajax_loader">&nbsp;</div></div>
+
+        <div class="form_item name_form_item" data-required-message="Укажите ваше имя">
+            <div class="form_pole">[text* you_name akismet:author placeholder "Ваше имя"]</div>
+        </div>
+
+        <div class="form_item" data-required-message="Укажите фамилию">
+            <div class="form_pole">[text* last_name placeholder "Ваша фамилия"]</div>
+        </div>
+
+        <div class="form_item textarea" data-required-message="Напишите свой отзыв">
+            <div class="form_pole">[textarea* review placeholder "Отзыв"]</div>
+        </div>
+
+        [select* score default:5 "1" "2" "3" "4" "5"  ]
+
+    </div>
+    <div class="form_controls clearfix">
+        <div class="form_buttons">[submit class:button "Оставить отзыв" ]</div>
+    </div>
+[honeypot secondname move-inline-css:true nomessage:true]
+
+
+
+<h2>Новый отзыв на сайте DMG Clinic</h2>
+<p>
+<strong>Автор:</strong> [name] [last_name]<br/>
+<strong>Оценка:</strong> [score]<br/>
+<strong>Текст отзыва:</strong> [review]
+</p>
+<p>
+Для того чтобы отзыв показывался на сайте вам нужно его одобрить. Для этого на странице <a href="https://clinic-tesla.ru/wp-admin/edit.php?post_type=review">отзывов</a> установите статус <strong>опубликовано</strong> для соответствующей записи.
+</p>
