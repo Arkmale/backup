@@ -32,3 +32,62 @@
 <p>
 Для того чтобы отзыв показывался на сайте вам нужно его одобрить. Для этого на странице <a href="https://clinic-tesla.ru/wp-admin/edit.php?post_type=review">отзывов</a> установите статус <strong>опубликовано</strong> для соответствующей записи.
 </p>
+
+
+
+---
+
+
+                <a href="#" class="responsive_add_review_button responsive_button button purple_button" data-block=".add_review form" title="<?= main_get_string('add_review'); ?>" >
+                    <?= main_get_string('add_review'); ?>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                </a>
+
+                <?= main_get_form('review_page'); ?>
+
+
+
+
+            <div class="add_review footer_add_review">
+                <a href="#" class="responsive_add_review_button responsive_button button purple_button" data-block=".add_review form" title="<?= main_get_string('add_review'); ?>" >
+                    <?= main_get_string('add_review'); ?>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                </a>
+
+                <?= main_get_form('review_page'); ?>
+            </div>
+
+
+
+
+<!-- Шаблон формы -->
+
+<div class="form_block">
+    <div class="shadow_back block_shadow_back" id="review_shadow_back"><div class="ajax_loader">&nbsp;</div></div>
+<h3 class="form_header">Оставьте свой отзыв</h3>
+    <div class="row">
+        <div class="col-xs-12 col-sm-4">
+            <div class="form_item name_form_item" data-required-message="Укажите ваше имя">
+                <div class="form_pole">[text* you_name akismet:author placeholder "Ваше имя"]</div>
+            </div>
+            <div class="form_item" data-required-message="Укажите фамилию">
+                <div class="form_pole">[text* last_name placeholder "Ваша фамилия"]</div>
+            </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-4">
+            <div class="form_item textarea" data-required-message="Напишите свой отзыв">
+                <div class="form_pole">[textarea* review placeholder "Отзыв"]</div>
+            </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-4">
+            [select* score default:5 "1" "2" "3" "4" "5"  ]
+            <div class="form_controls clearfix">
+                <div class="form_buttons">[submit class:button "Отправить" ]</div>
+            </div>
+        </div>
+
+    </div>
+[honeypot lastname move-inline-css:true nomessage:true]
+</div>            
